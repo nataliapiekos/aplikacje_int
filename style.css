@@ -1,0 +1,64 @@
+body {
+	background-color: #FFFF8D;
+}
+
+main {
+	margin: 10px;
+	padding: 10px;
+}
+
+#menu {
+	background-color: #F28705;
+	border: 3px solid #F2B705;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+#menu-btn {
+	margin: 10px;
+	background-color: #F2B705;
+	color: white; 
+}
+
+#menu-btn:hover {
+	background-color: #D93D1A;
+}
+
+#menu-list {
+	background-color: #F2B705;
+	margin: 10px;
+	padding: 10px;
+}
+
+#menu-list a {	
+	text-decoration: none;
+	color: white;
+}
+
+#menu-list a:hover {	
+	text-decoration: underline;
+	color: white;
+}
+
+header {
+	vertical-align: middle;
+	color: white;
+	text-align: right;
+}
+
+section {
+	padding: 10px;
+}
+
+#paragraph {
+	color: #FECB00;
+	font-size: 30px;
+}
+
+img {
+	margin: 3px;
+	padding: 3px;
+	border: 6px dotted #F2B705;
+	max-width: 100%;
+	height: auto;
+}

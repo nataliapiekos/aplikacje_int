@@ -3,50 +3,55 @@
 <head>
 	<meta charset="utf-8">
 	<title>My first page</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<style>
-		body {
-			background-color: #FFFF8D;
-		}
-		#akapit {
-			color: #FECB00;
-		}
-	</style>
+	<!--My external stylesheets-->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<main>
-		<h1>My page</h1>
-		<div class="row">
-  			<div class="col-sm-12 col-lg-4">Menu</div>
-  			<div class="col-sm-12 col-lg-4">Page 1</div>
-  			<div class="col-sm-12 col-lg-4">Page 2</div>
+		<div id="menu" class="row">
+			<div class="dropdown col-sm-4 col-lg-4">
+	  			<button id="menu-btn" class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  				Menu
+	 			</button>
+	  			<div  id="menu-list" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    			<a class="dropdown-item" href="#">Page 1</a><br>
+	    			<a class="dropdown-item" href="#">Page 2</a><br>
+	    			<a class="dropdown-item" href="#">Page 3</a>
+	  			</div>
+	  		</div>		
+			<header class="col-sm-8 col-lg-8">
+				<h1>My page</h1>
+			</header>
 		</div>
-		<!--<div class="alert alert-primary" role="alert">
-			This is alert
-		</div>
-		<div class="alert alert-danger" role="alert">
-		This is also alert
-		</div>
-		<button class="btn btn-info">Przycisk z klasą .btn .btn-info</button>
-		<button>Przycisk podstawowy bez bootstrapa</button>-->
-		<span>First inline element.</span> <span>Second inline element.</span>
-		<div>First block element.</div><div>Second block element.</div>
-		<p>Hello!</p>
-		<p id="akapit">Example lists:</p>
-		<h3>Flowers</h3>
-		<ul>
-			<li><a href="https://www.almanac.com/plant/sunflowers">Sunflowers</a></li>
-			<li><a href="https://www.bioadvanced.com/articles/growing-roses-secrets-success">Roses</a></li>
-		</ul>
-		<h3>Animals</h3>
-		<ol>
-			<li>Lion</li>
-			<li>Elephant</li>
-		</ol>
-		<img src="lion.jpg" width="500" height="500">
-		<img src="elephant.jpg" width="500" height="500">
+		<section>
+			<span>First inline element.</span> <span>Second inline element.</span>
+			<div>First block element.</div><div>Second block element.</div>
+			<p id="paragraph">Example lists:</p>
+			<h3>Flowers</h3>
+			<ul>
+				<li><a href="https://www.almanac.com/plant/sunflowers">Sunflowers</a></li>
+				<li><a href="https://www.bioadvanced.com/articles/growing-roses-secrets-success">Roses</a></li>
+			</ul>
+			<h3>Animals</h3>
+			<ol>
+				<li>Lion</li>
+				<li>Elephant</li>
+			</ol>
+			<div class="row">
+				<div class="col-sm-12 col-lg-6">
+					<img src="lion.jpg" alt="lion">
+				</div>
+				<div class="col-sm-12 col-lg-6">
+					<img src="elephant.jpg" alt="elephant">
+				</div>
+				
+			</div>
+		</section>		
 	</main>
 </body>
 </html>
