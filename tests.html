@@ -4,11 +4,51 @@
 	<title>Java Script</title>
 	<meta charset="utf-8">
 	<script type="text/javascript">
+		//functions 
+
+		function multiply (a1, a2, a3) {
+			var sum = a1*a2*a3;
+			return sum;
+		}
+
+		function concating (b1, b2, b3) {
+			var result = b1+b2+b3;
+			return result;
+		}
+		function divide (c1, c2) {
+			var result = c1/c2;
+			return result;
+		}
+
+		function showValue() {
+			var name = document.getElementById("participant").value;
+          	document.getElementById("new-participant").innerHTML = name;
+          	console.log(name);
+    	}
+
+    	function removeValue() {
+        	var name = document.getElementById("participant").value;
+          	window.alert(name);
+          	document.getElementById("participant").value = null;
+    	}
+
+    	function showHello() {
+    		document.getElementById("hello").innerHTML = "Hello!";
+    	}
+
+    	function removeHello() {
+    		document.getElementById("hello").innerHTML = null;
+    	}
+
+	</script>
+
+	<script type="text/javascript">
 		var fruits = ["apple", "banana", "pear", "plum" ];
 		var person = {name:"Natalia", surname:"Piękoś", age:20};
-		var x=32;
-		var y="32";
-		var z=42;
+		var x = 32;
+		var y = "32";
+		var z = 42;
+		
 		console.log("x="+x);
 		console.log("y="+y);
 		console.log("z="+z);
@@ -16,10 +56,61 @@
 		console.log(person.age);
 		console.log(x==y);
 		console.log(x===y);
-		console.log(x>z)
+		console.log(x>z);
+
+		//if
+		var logic = false;
+		if (x>20) {
+			logic = true;
+		}
+		console.log("logic: "+logic);
+		
+		//for
+		var text = "";
+		for (var i=0; i<20; i++) {
+			text+="a";
+		}
+		console.log(text);
+
+		//while
+		text = "";
+		while (text.length<20) {
+			text+="b";
+			i++;
+		}
+		console.log(text);
+
+		// variables for functions 
+
+		var a = 12;
+		var b = 2;
+		var c = 4;
+		console.log(multiply(a,b,c));
+
+		var d = "one ";
+		var e = "two ";
+		var f = "three";
+		console.log(concating(d,e,f));
+
+		var g = 36;
+		var h = 2;
+		console.log(divide(g,h));
+
+
 	</script>
 </head>
 <body>
+	<div>
+	  	<h1>New participant</h1>
+	  	<div id="new-participant"></div>
+  	</div>
+  <input type="text" id="participant" placeholder="fill name">
+  <button type="button" onclick="showValue()">Show</button>
+  <button type="button" onclick="removeValue()">Clear</button>
+
+  <div id="hello"></div>
+  <button type="button" onclick="showHello()">Greet!</button>
+  <button type="button" onclick="removeHello()">(un)Greet!</button>
 
 </body>
 </html>
